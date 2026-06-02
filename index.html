@@ -48,60 +48,7 @@
 
 		<section class="about">
 			<div class="container">
-				<div class="about__project-1 reveal">
-					<div class="about__content">
-						<h2 class="about__subtitle">01 / PROJECT NAME</h2>
-						<p class="about__text">
-							Goblin concept digital sculpture with human-like skin. Learned a
-							lot of quick tips and look development.
-						</p>
-						<ul class="about__list">
-							<li class="about__item">
-								<a href="#" class="about__link"
-									>More shots from this project ↗</a
-								>
-							</li>
-						</ul>
-					</div>
-					<div class="about__photo">
-						<img src="img/img_1.png" alt="Project 1" />
-					</div>
-				</div>
-
-				<div class="about__project-2 reveal">
-					<div class="about__content">
-						<h2 class="about__subtitle">02 / PROJECT NAME</h2>
-						<p class="about__text">
-							Subsurface weight, specular roughness, diffuse maps generated with
-							the procedure and manual techniques.
-						</p>
-						<ul class="about__list">
-							<li class="about__item">
-								<a href="#" class="about__link">See case study ↗</a>
-							</li>
-						</ul>
-					</div>
-					<div class="about__photo">
-						<img src="img/img_2.png" alt="Project 2" />
-					</div>
-				</div>
-
-				<div class="about__project-3 reveal">
-					<div class="about__content">
-						<h2 class="about__subtitle">03 / PROJECT NAME</h2>
-						<p class="about__text">
-							Experimental creature modeling for school project.
-						</p>
-						<ul class="about__list">
-							<li class="about__item">
-								<a href="#" class="about__link">Project WIP ↗</a>
-							</li>
-						</ul>
-					</div>
-					<div class="about__photo">
-						<img src="img/img_3.png" alt="Project 3" />
-					</div>
-				</div>
+				<div class="about__list"></div>
 			</div>
 		</section>
 
@@ -120,24 +67,6 @@
 			</div>
 		</footer>
 
-		<script>
-			document.addEventListener('DOMContentLoaded', () => {
-				const observer = new IntersectionObserver(
-					entries => {
-						entries.forEach(entry => {
-							if (entry.isIntersecting) {
-								entry.target.classList.add('in')
-
-								observer.unobserve(entry.target)
-							}
-						})
-					},
-					{
-						threshold: 0.15,
-					},
-				)
-				document.querySelectorAll('.reveal').forEach(el => observer.observe(el))
-			})
-		</script>
+		<script type="module" src="./js/pages/home.js"></script>
 	</body>
 </html>

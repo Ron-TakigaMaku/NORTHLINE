@@ -24,6 +24,7 @@ body {
 	color: var(--main-black);
 	font-family: 'Montserrat', sans-serif;
 	background-color: var(--main-white);
+	background-image: none;
 }
 
 ul {
@@ -64,7 +65,14 @@ ul {
 .header {
 	align-items: center;
 	display: flex;
+	left: 0;
+	position: absolute;
+	top: 0;
+	z-index: 100;
+	width: 100%;
 	padding: 40px 0 0 0;
+
+	background: transparent;
 	animation: fadeDown 0.6s ease both;
 
 	&__container {
@@ -75,6 +83,7 @@ ul {
 	}
 
 	&__logo {
+		color: var(--main-white);
 		font-size: 20px;
 		font-weight: 700;
 		text-transform: uppercase;
@@ -88,6 +97,7 @@ ul {
 	&__link {
 		position: relative;
 		color: inherit;
+		color: var(--main-white);
 		font-size: 16px;
 		text-decoration: none;
 		text-transform: uppercase;
@@ -112,7 +122,13 @@ ul {
 
 .hero {
 	padding: 160px 0 200px 0;
-
+	color: var(--main-white);
+	background-image:
+		linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+		url('../img/main.png');
+	background-position: 50% 20%;
+	background-repeat: no-repeat;
+	background-size: cover;
 	&__title {
 		max-width: 1000px;
 		margin: 0 0 24px 0;
@@ -124,7 +140,7 @@ ul {
 
 	&__text {
 		max-width: 580px;
-		color: var(--main-gray);
+		color: var(--main-white);
 		font-size: 32px;
 		font-weight: 400;
 		line-height: 1.4;
@@ -161,7 +177,7 @@ ul {
 		img {
 			display: block;
 			height: auto;
-			max-width: 100%;
+			max-width: 300px;
 		}
 	}
 
