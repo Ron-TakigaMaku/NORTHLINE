@@ -7,13 +7,26 @@ export const initSlider = () => {
 	const slides = track.querySelectorAll('.product-card')
 	const n = slides.length
 
+	let autoScrollTimer
+
 	slides.forEach((_, i) => {
 		const dot = document.createElement('button')
 		dot.className = 'about__dot' + (i === 0 ? ' active' : '')
 		dot.setAttribute('aria-label', 'Слайд ' + (i + 1))
-		dot.onclick = () => go(i)
+		dot.onclick = () => {
+			clearInterval(autoScrollTimer) // Очищаем при ручном клике
+			go(i)
+			startAutoScroll() // Перезапускаем после клика
+		}
 		dotsEl.appendChild(dot)
 	})
+
+	const startAutoScroll = () => {
+		clearInterval(autoScrollTimer) // На всякий случай очищаем старый
+		autoScrollTimer = setInterval(() => {
+			go(idx + 1)
+		}, 3000)
+	}
 
 	const go = i => {
 		idx = (i + n) % n
@@ -24,6 +37,18 @@ export const initSlider = () => {
 		counter.textContent = `${idx + 1} / ${n}`
 	}
 
-	document.querySelector('.about__next').onclick = () => go(idx + 1)
-	document.querySelector('.about__prev').onclick = () => go(idx - 1)
+	document.querySelector('.about__next').onclick = () => {
+		clearInterval(autoScrollTimer)
+		go(idx + 1)
+		startAutoScroll()
+	}
+
+	document.querySelector('.about__prev').onclick = () => {
+		clearInterval(autoScrollTimer)
+		go(idx - 1)
+		startAutoScroll()
+	}
+
+	// Запуск при загрузке страницы
+	startAutoScroll()
 }
