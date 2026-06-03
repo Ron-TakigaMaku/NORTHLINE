@@ -14,15 +14,15 @@ export const initSlider = () => {
 		dot.className = 'about__dot' + (i === 0 ? ' active' : '')
 		dot.setAttribute('aria-label', 'Слайд ' + (i + 1))
 		dot.onclick = () => {
-			clearInterval(autoScrollTimer) // Очищаем при ручном клике
+			clearInterval(autoScrollTimer)
 			go(i)
-			startAutoScroll() // Перезапускаем после клика
+			startAutoScroll()
 		}
 		dotsEl.appendChild(dot)
 	})
 
 	const startAutoScroll = () => {
-		clearInterval(autoScrollTimer) // На всякий случай очищаем старый
+		clearInterval(autoScrollTimer)
 		autoScrollTimer = setInterval(() => {
 			go(idx + 1)
 		}, 3000)
@@ -49,6 +49,5 @@ export const initSlider = () => {
 		startAutoScroll()
 	}
 
-	// Запуск при загрузке страницы
 	startAutoScroll()
 }

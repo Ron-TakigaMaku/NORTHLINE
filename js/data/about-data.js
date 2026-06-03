@@ -32,4 +32,37 @@ export const aboutData = [
 		linkText: 'More information ↗',
 		linkUrl: '#',
 	},
+	{
+		id: 4,
+		brand: 'Nike',
+		title: 'Sportswear Authentics Corduroy Hooded Jacket',
+		price: '$170',
+		description:
+			'A stylish transitional zip-up jacket made from durable, heavy-wale black corduroy. Features an adjustable hood, a utility-style sleeve pocket, and minimalist embroidered Swoosh logos on the chest and hood. It perfectly complements modern streetwear and gorpcore aesthetics.',
+		img: 'img/sportswear.png',
+		linkText: 'More information ↗',
+		linkUrl: '#',
+	},
+	{
+		id: 5,
+		brand: 'Nike',
+		title: 'Reversible Big Swoosh Full-Zip Boa Jacket',
+		price: '$160',
+		description:
+			'A reversible full-zip jacket made of soft, warm "boa" fleece (sherpa). The standout feature is a giant dark grey Swoosh that wraps across the chest and back over a black base. The inner side is made of smooth, wind-resistant nylon, allowing it to be worn as a sleek windbreaker.',
+		img: 'img/reversible.png',
+		linkText: 'More information ↗',
+		linkUrl: '#',
+	},
+	{
+		id: 6,
+		brand: 'Nike',
+		title: 'Reversible Big Swoosh Full-Zip Boa Jacket',
+		price: '$170',
+		description:
+			'The classic and most popular colorway of the reversible fleece jacket series. It features a high-contrast, giant off-white (Sail) Swoosh across a deep black fleece background, making it a staple piece in streetwear culture. The reverse side turns into a practical black nylon jacket with a small white logo on the chest.',
+		img: './img/neversible.png',
+		linkText: 'More information ↗',
+		linkUrl: '#',
+	},
 ]
