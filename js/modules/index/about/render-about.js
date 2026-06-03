@@ -1,7 +1,8 @@
-import { createAboutCards } from '../../../components/about-cards.js'
+import { createCard } from '../../../components/about-cards.js'
 import { aboutData } from '../../../data/about-data.js'
-export function renderAbout() {
-	const aboutList = document.querySelector('.about__list')
-	if (!aboutList) return
-	aboutList.innerHTML = aboutData.map(createAboutCards).join('')
+
+export const renderAbout = () => {
+	const container = document.querySelector('.about__track')
+	if (!container) return
+	container.innerHTML = aboutData.map(createCard).join('')
 }

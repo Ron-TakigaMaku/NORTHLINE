@@ -1,3 +1,4 @@
+import { initSlider } from '../modules/index/about/init-slider.js'
 import { renderAbout } from '../modules/index/about/render-about.js'
 
 function initRevealAnimation() {
@@ -22,4 +23,5 @@ function initRevealAnimation() {
 document.addEventListener('DOMContentLoaded', () => {
 	renderAbout()
 	initRevealAnimation()
+	initSlider()
 })

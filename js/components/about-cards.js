@@ -1,15 +1,14 @@
-export function createAboutCards(item, index) {
-	return `
-		<div class="about__project reveal about__project-${index + 1}">
-			<div class="about__content">
-				<h2 class="about__subtitle">${item.title}</h2>
-				<h1 class='about__price'>${item.price}</h1>
-				<p class="about__text">${item.description}</p>
-				<a href="${item.linkUrl}" class="about__link">${item.linkText}</a>
-			</div>
-			<div class="about__photo">
-				<img src="${item.img}" alt="${item.title}" />
-			</div>
-		</div>
-	`
-}
+export const createCard = product => `
+<article class="product-card">
+  <div class="product-card__img">
+    <img src="${product.img}" alt="${product.title}">
+  </div>
+  <div class="product-card__info">
+    <p class="product-card__brand">${product.brand}</p>
+    <h3 class="product-card__title">${product.title}</h3>
+    <p class="product-card__price">${product.price}</p>
+    <p class="product-card__desc">${product.description}</p>
+    <a class="product-card__link" href="${product.linkUrl}">${product.linkText}</a>
+  </div>
+</article>
+`

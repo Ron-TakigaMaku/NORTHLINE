@@ -191,50 +191,127 @@ ul {
 }
 
 .about {
-	padding: 80px 0;
+	animation: fadeDown 0.7s 0.4s ease both;
 
-	&__content {
+	&__wrapper {
+		overflow: hidden;
+	}
+
+	&__track {
 		display: flex;
-		flex-direction: column;
+		transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 	}
 
-	&__project-1,
-	&__project-2,
-	&__project-3 {
-		align-items: flex-start;
+	&__nav {
+		align-items: center;
 		display: flex;
-		padding: 0 0 60px 0;
-		gap: 30px;
+		justify-content: space-between;
+		padding: 0.75rem 1.5rem;
 	}
 
-	&__subtitle {
-		max-width: 326px;
-		font-size: 18px;
-		font-weight: 500;
+	&__dots {
+		display: flex;
+		gap: 6px;
 	}
 
-	&__photo {
-		flex-shrink: 0;
+	&__dot {
+		height: 6px;
+		width: 6px;
+		padding: 0;
+		background: #ccc;
+		border: none;
+		border-radius: 50%;
+		cursor: pointer;
 
-		img {
-			display: block;
-			height: auto;
-			max-width: 300px;
+		&.active {
+			background: #000;
 		}
 	}
 
-	&__link {
-		color: var(--secondary-color);
-		font-weight: 600;
-		text-decoration: none;
-		transition: opacity 0.2s ease;
+	&__counter {
+		color: #888;
+		font-size: 13px;
+	}
+
+	&__btns {
+		display: flex;
+		gap: 8px;
+	}
+
+	&__prev,
+	&__next {
+		height: 36px;
+		width: 36px;
+		font-size: 16px;
+		background: transparent;
+		border: 0.5px solid #ccc;
+		border-radius: 50%;
+		cursor: pointer;
 
 		&:hover {
-			opacity: 0.8;
+			background: #f5f5f5;
 		}
 	}
 }
 
+.product-card {
+	align-items: center;
+	display: flex;
+	min-width: 100%;
+	padding: 2rem 1.5rem;
+	box-sizing: border-box;
+	gap: 32px;
+
+	&__info {
+		flex: 1;
+	}
+
+	&__brand {
+		margin: 0 0 4px;
+		color: #888;
+		font-size: 14px;
+	}
+
+	&__price {
+		margin: 0 0 12px;
+		font-size: 36px;
+		font-weight: 500;
+		line-height: 1;
+	}
+
+	&__desc {
+		margin: 0 0 14px;
+		color: #666;
+		font-size: 14px;
+		line-height: 1.6;
+	}
+
+	&__link {
+		color: #000;
+		font-size: 14px;
+		font-weight: 500;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	&__img {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		height: 200px;
+		width: 260px;
+		background: #ffffff;
+		border-radius: 12px;
+		flex-shrink: 0;
+
+		img {
+			height: 100%;
+			width: 100%;
+			border-radius: 12px;
+			object-fit: contain;
+		}
+	}
+}
 .footer {
 	padding: 60px 0;
 	border-top: 1px solid ease(var(--main-gray), 0.2);
