@@ -254,6 +254,34 @@ ul {
 	}
 }
 
+.colection {
+	padding: 200px 0 200px 0;
+	color: var(--main-white);
+	background-image:
+		linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+		url('../img/section-img.png');
+	background-position: 50% 40%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	&__title {
+		max-width: 1000px;
+		margin: 0 0 24px 0;
+		font-size: 50px;
+		font-weight: 500;
+		line-height: 1.2;
+		animation: fadeDown 0.7s 0.2s ease both;
+	}
+
+	&__text {
+		max-width: 580px;
+		color: var(--main-white);
+		font-size: 32px;
+		font-weight: 400;
+		line-height: 1.4;
+		animation: fadeDown 0.7s 0.4s ease both;
+	}
+}
+
 .product-card {
 	align-items: center;
 	display: flex;
