@@ -34,7 +34,7 @@ export const initSlider = () => {
 		dotsEl
 			.querySelectorAll('.about__dot')
 			.forEach((d, j) => d.classList.toggle('active', j === idx))
-		counter.textContent = `${idx + 1} / ${n}`
+		if (counter) counter.textContent = `${idx + 1} / ${n}`
 	}
 
 	document.querySelector('.about__next').onclick = () => {
