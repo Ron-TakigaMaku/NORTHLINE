@@ -1,6 +1,7 @@
 import { initSlider } from '../modules/index/about/init-slider.js'
 import { renderAbout } from '../modules/index/about/render-about.js'
 import { renderHero } from '../modules/index/hero/hero-render.js'
+import { renderValues } from '../modules/index/render-value.js'
 import { renderCollection } from '../modules/index/section/render-section.js'
 
 function initRevealAnimation() {
@@ -25,6 +26,7 @@ function initRevealAnimation() {
 document.addEventListener('DOMContentLoaded', () => {
 	renderAbout()
 	renderHero()
+	renderValues()
 	renderCollection()
 	initRevealAnimation()
 	initSlider()
