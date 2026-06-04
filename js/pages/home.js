@@ -1,6 +1,7 @@
 import { initSlider } from '../modules/index/about/init-slider.js'
 import { renderAbout } from '../modules/index/about/render-about.js'
 import { renderHero } from '../modules/index/hero/hero-render.js'
+import { renderCollection } from '../modules/index/section/render-section.js'
 
 function initRevealAnimation() {
 	const observer = new IntersectionObserver(
@@ -24,6 +25,7 @@ function initRevealAnimation() {
 document.addEventListener('DOMContentLoaded', () => {
 	renderAbout()
 	renderHero()
+	renderCollection()
 	initRevealAnimation()
 	initSlider()
 })
