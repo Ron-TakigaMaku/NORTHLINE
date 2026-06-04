@@ -1,9 +1,9 @@
 export const collectionData = [
 	{
 		id: 1,
-		title: 'Technical apparel for urban exploration',
+		title: 'The new season collection is here',
 		description:
-			'Performance-driven outerwear engineered for city streets,mountain trails, and everything in between.',
+			'Refined silhouettes, technical fabrics, and details that matter. Explore the pieces built to last beyond the trend.',
 		img: 'img/section-img.png',
 	},
 ]

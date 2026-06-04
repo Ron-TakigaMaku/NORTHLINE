@@ -1,9 +1,9 @@
 export const heroData = [
 	{
 		id: 1,
-		title: 'Technical apparel for urban exploration',
+		title: 'Built for the city. Ready for the wild',
 		description:
-			'Discover the perfect blend of style and functionality with our collection of technical apparel designed for urban exploration. ',
+			'NORTHLINE gear moves with you — from dawn commutes to weekend escapes. Engineered for those who never stop.',
 		img: 'img/hero.png',
 	},
 ]
