@@ -456,6 +456,10 @@ ul {
 	}
 }
 
+.section-title .accent {
+	color: var(--orange);
+}
+
 .value {
 	&-item {
 		align-items: flex-start;
