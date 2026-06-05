@@ -425,7 +425,7 @@ ul {
 		text-decoration: none;
 		background: var(--main-black);
 		border: none;
-		border-radius: 2px;
+		border-radius: 12px;
 		transition:
 			background 0.25s,
 			transform 0.15s;
@@ -576,4 +576,77 @@ ul {
 			color: var(--secondary-color);
 		}
 	}
+}
+
+.modal {
+	align-items: center;
+	display: none;
+	justify-content: center;
+	position: fixed;
+	z-index: 9999;
+	inset: 0;
+}
+.modal.modal--open {
+	display: flex;
+}
+.modal__overlay {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.55);
+	inset: 0;
+}
+.modal__window {
+	overflow: auto;
+	position: relative;
+	z-index: 1;
+	max-height: 90vh;
+	width: min(100%, 520px);
+	padding: 28px 24px 24px;
+	background: #fff;
+	border-radius: 20px;
+	box-shadow: 0 24px 80px rgba(0, 0, 0, 0.18);
+}
+.modal__close {
+	position: absolute;
+	right: 16px;
+	top: 16px;
+	color: #111;
+	font-size: 24px;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+}
+.modal__body {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+}
+.modal__img {
+	width: 100%;
+	border-radius: 14px;
+	object-fit: cover;
+}
+.modal__brand {
+	margin: 0;
+	color: #777;
+	font-size: 12px;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+}
+.modal__title {
+	margin: 0.25rem 0 0;
+	color: #111;
+	font-size: 28px;
+	line-height: 1.1;
+}
+.modal__price {
+	margin: 0.5rem 0 0;
+	color: #222;
+	font-size: 18px;
+	font-weight: 700;
+}
+.modal__desc {
+	margin: 0.75rem 0 0;
+	color: #444;
+	font-size: 15px;
+	line-height: 1.7;
 }
