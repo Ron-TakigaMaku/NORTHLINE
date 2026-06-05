@@ -1,5 +1,5 @@
-import { createCollectionCard } from '../../../components/section-cards.js'
-import { collectionData } from '../../../data/section-data.js'
+import { createCollectionCard } from '../../../index/components/section-cards.js'
+import { collectionData } from '../../../index/data/section-data.js'
 
 export function renderCollection() {
 	const collection = document.querySelector('.collection__list')
