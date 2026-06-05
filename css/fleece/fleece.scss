@@ -192,6 +192,11 @@ ul {
 			object-position: center;
 		}
 	}
+	&__list {
+		position: relative;
+		min-height: 100vh;
+		width: 100%;
+	}
 
 	&::after {
 		position: absolute;
