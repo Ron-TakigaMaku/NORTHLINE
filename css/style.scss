@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
 :root {
 	--main-white: #ffffff;
 	--main-black: #000000;
-	--main-gray: #838282;
+	--main-gray: #979595;
 	--secondary-color: #63103a;
 	--orange: #ff6600;
 }
@@ -174,6 +175,7 @@ ul {
 		z-index: 0;
 		height: 100%;
 		width: 100%;
+		filter: brightness(0.5);
 		inset: 0;
 
 		img {
@@ -306,6 +308,7 @@ ul {
 		z-index: 0;
 		height: 100%;
 		width: 100%;
+		filter: brightness(0.5);
 		inset: 0;
 
 		img {
@@ -418,7 +421,6 @@ ul {
 
 .values {
 	padding: 100px 40px;
-	background: var(--bg);
 
 	&-grid {
 		display: grid;
