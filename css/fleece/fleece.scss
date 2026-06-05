@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Anton&display=swap');
+
+:root {
+	--main-white: #ffffff;
+	--main-black: #000000;
+	--main-gray: #979595;
+	--secondary-color: #63103a;
+	--orange: #ff6600;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Space Grotesk', sans-serif;
+	scroll-behavior: smooth;
+}
+
+body {
+	overflow-x: hidden;
+	color: var(--main-black);
+	background-color: var(--main-white);
+	background-image: none;
+}
+
+/* Ensure form controls inherit the page font */
+input,
+button,
+textarea,
+select {
+	font-family: inherit;
+}
+
+ul {
+	list-style-type: none;
+}
+
+@keyframes fadeDown {
+	from {
+		transform: translateY(-20px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.reveal {
+	transition:
+		opacity 0.8s ease,
+		transform 0.8s ease;
+	transform: translateY(40px);
+	opacity: 0;
+
+	&.in {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.btn {
+	display: inline-block;
+	padding: 14px 36px;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 1.5px;
+	text-decoration: none;
+	border: none;
+	border-radius: 2px;
+	animation: fadeDown 0.6s ease both;
+	transition:
+		background 0.25s,
+		transform 0.15s;
+	cursor: pointer;
+}
+.btn:hover {
+	background: var(--red);
+	transform: translateY(-1px);
+}
+.btn-dark {
+	display: inline-block;
+	padding: 16px 44px;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 1.5px;
+	text-decoration: none;
+	background: var(--primary);
+	border: none;
+	border-radius: 2px;
+	transition:
+		background 0.25s,
+		transform 0.15s;
+	cursor: pointer;
+}
+.btn-dark:hover {
+	background: var(--red);
+	transform: translateY(-1px);
+}
+
+.container {
+	max-width: 1120px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 16px;
+}
+
+.header {
+	align-items: center;
+	display: flex;
+	left: 0;
+	position: absolute;
+	top: 0;
+	z-index: 100;
+	width: 100%;
+	padding: 40px 0 0 0;
+
+	background: transparent;
+	animation: fadeDown 0.6s ease both;
+
+	&__container {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	&__logo {
+		color: var(--main-white);
+		font-size: 20px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	&__list {
+		display: flex;
+		gap: 34px;
+	}
+
+	&__link {
+		position: relative;
+		color: inherit;
+		color: var(--main-white);
+		font-size: 16px;
+		text-decoration: none;
+		text-transform: uppercase;
+
+		&::after {
+			bottom: -5px;
+			left: 0;
+			position: absolute;
+			height: 2px;
+			width: 100%;
+			background: var(--secondary-color);
+			transition: transform 0.3s ease;
+			content: '';
+			transform: scaleX(0);
+		}
+
+		&:hover::after {
+			transform: scaleX(1);
+		}
+	}
+}
