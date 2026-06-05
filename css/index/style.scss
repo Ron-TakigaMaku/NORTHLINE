@@ -599,7 +599,7 @@ ul {
 	position: relative;
 	z-index: 1;
 	max-height: 90vh;
-	width: min(100%, 520px);
+	width: min(100%, 1520px);
 	padding: 28px 24px 24px;
 	background: #fff;
 	border-radius: 20px;
@@ -621,7 +621,7 @@ ul {
 	gap: 14px;
 }
 .modal__img {
-	width: 100%;
+	width: 600px;
 	border-radius: 14px;
 	object-fit: cover;
 }

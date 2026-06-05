@@ -1,14 +1,16 @@
-// js/modules/index/modal/product-modal.js
 import { aboutData } from '../../../index/data/about-data.js'
 
 function createModalContent(item) {
 	return `
-    <img src="${item.img}" alt="${item.title}" class="modal__img" />
-    <p class="modal__brand">${item.brand}</p>
-    <h2 class="modal__title">${item.title}</h2>
-    <p class="modal__price">${item.price}</p>
-    <p class="modal__desc">${item.description}</p>
-  `
+		<div class="modal__gallery">
+			<img src="${item.img}" alt="${item.title}" class="modal__img" />
+			<img src="${item.image}" alt="${item.title}" class="modal__img" />
+		</div>
+		<p class="modal__brand">${item.brand}</p>
+		<h2 class="modal__title">${item.title}</h2>
+		<p class="modal__price">${item.price}</p>
+		<p class="modal__desc">${item.description}</p>
+	`
 }
 
 export function initProductModal() {

@@ -1,0 +1,23 @@
+.modal__gallery {
+	align-items: flex-start;
+	display: flex;
+	margin-bottom: 12px;
+	gap: 12px;
+}
+
+.modal__gallery .modal__img {
+	width: calc(50% - 6px);
+	border-radius: 14px;
+	aspect-ratio: 1 / 1; /* или 4 / 3 */
+	object-fit: cover;
+}
+
+@media (max-width: 640px) {
+	.modal__gallery {
+		flex-direction: column;
+	}
+
+	.modal__gallery .modal__img {
+		width: 100%;
+	}
+}

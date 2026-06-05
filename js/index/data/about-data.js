@@ -7,6 +7,7 @@ export const aboutData = [
 		description:
 			'A retro-inspired windbreaker born from the collaboration between skate giant Palace and heritage sportswear brand Umbro. Featuring a crisp white nylon shell, this jacket is detailed with contrast piping, light grey side panelling, and a classic stand-up collar. Completed with co-branded embroidery on the chest, capturing a perfect 90s football terrace aesthetic.',
 		img: 'img/index/track/Palace x Umbro Track Jacket.png',
+		image: 'img/index/track/palace-details-1.png',
 		linkText: 'More information ↗',
 		linkUrl: '#',
 	},
@@ -18,6 +19,7 @@ export const aboutData = [
 		description:
 			'A minimalist hooded windbreaker designed for urban utility. Crafted from a matte black tech-fabric, it stands out with its sharp, white reflective contrast piping that defines its ergonomic, boxy fit. Equipped with a sleek waterproof center zip, secure zipped side pockets, and elasticated cuffs to block out the elements.',
 		img: 'img/index/track/Bitsnbobs Tech Shell Jacket.png',
+		image: 'img/index/track/bitsnbobs-details.png',
 		linkText: 'More information ↗',
 		linkUrl: '#',
 	},
@@ -40,6 +42,7 @@ export const aboutData = [
 		description:
 			'A stylish transitional zip-up jacket made from durable, heavy-wale black corduroy. Features an adjustable hood, a utility-style sleeve pocket, and minimalist embroidered Swoosh logos on the chest and hood. It perfectly complements modern streetwear and gorpcore aesthetics.',
 		img: 'img/index/track/sportswear.png',
+		image: 'img/index/track/nike-supream-details.png',
 		linkText: 'More information ↗',
 		linkUrl: '#',
 	},
