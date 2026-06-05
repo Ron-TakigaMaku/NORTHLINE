@@ -11,6 +11,80 @@
 		/>
 		<title>NORTHLINE</title>
 		<link rel="stylesheet" href="./css/index/style.min.css" />
+		<style>
+			.modal {
+				position: fixed;
+				inset: 0;
+				display: none;
+				align-items: center;
+				justify-content: center;
+				z-index: 9999;
+			}
+			.modal.modal--open {
+				display: flex;
+			}
+			.modal__overlay {
+				position: absolute;
+				inset: 0;
+				background: rgba(0, 0, 0, 0.55);
+			}
+			.modal__window {
+				position: relative;
+				z-index: 1;
+				width: min(100%, 520px);
+				max-height: 90vh;
+				overflow: auto;
+				padding: 28px 24px 24px;
+				border-radius: 20px;
+				background: #fff;
+				box-shadow: 0 24px 80px rgba(0, 0, 0, 0.18);
+			}
+			.modal__close {
+				position: absolute;
+				top: 16px;
+				right: 16px;
+				border: none;
+				background: transparent;
+				color: #111;
+				font-size: 24px;
+				cursor: pointer;
+			}
+			.modal__body {
+				display: flex;
+				flex-direction: column;
+				gap: 14px;
+			}
+			.modal__img {
+				width: 100%;
+				border-radius: 14px;
+				object-fit: cover;
+			}
+			.modal__brand {
+				margin: 0;
+				font-size: 12px;
+				color: #777;
+				text-transform: uppercase;
+				letter-spacing: 0.2em;
+			}
+			.modal__title {
+				margin: 0.25rem 0 0;
+				font-size: 28px;
+				line-height: 1.1;
+				color: #111;
+			}
+			.modal__price {
+				margin: 0.5rem 0 0;
+				font-size: 18px;
+				font-weight: 700;
+				color: #222;
+			}
+			.modal__desc {
+				margin: 0.75rem 0 0;
+				font-size: 15px;
+				line-height: 1.7;
+				color: #444;
+			}
+		</style>
 	</head>
 	<body>
 		<header class="header">
@@ -94,6 +168,15 @@
 				</div>
 			</div>
 		</footer>
+
+		<!-- MODAL -->
+		<div class="modal" id="product-modal">
+			<div class="modal__overlay"></div>
+			<div class="modal__window">
+				<button class="modal__close">✕</button>
+				<div class="modal__body"></div>
+			</div>
+		</div>
 
 		<!-- SCRIPTS	 -->
 

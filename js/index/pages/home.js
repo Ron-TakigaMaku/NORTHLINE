@@ -1,4 +1,5 @@
 import { initSlider } from '../../modules/index/about/init-slider.js'
+import { initProductModal } from '../../modules/index/about/product-modal.js'
 import { renderAbout } from '../../modules/index/about/render-about.js'
 import { renderHero } from '../../modules/index/hero/hero-render.js'
 import { renderValues } from '../../modules/index/render-value.js'
@@ -27,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	renderAbout()
 	renderHero()
 	renderValues()
+	initProductModal()
 	renderCollection()
 	initRevealAnimation()
 	initSlider()

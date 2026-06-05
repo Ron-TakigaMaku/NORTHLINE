@@ -8,7 +8,7 @@ export const createCard = product => `
 	    <h3 class="product-card__title">${product.title}</h3>
 	    <p class="product-card__price">${product.price}</p>
 	    <p class="product-card__desc">${product.description}</p>
-	    <a class="product-card__link" href="${product.linkUrl}">${product.linkText}	</a>
+	    <button class="product-card__link" data-id="${product.id}">${product.linkText}</button>
 	  </div>
 	</article>
 `
