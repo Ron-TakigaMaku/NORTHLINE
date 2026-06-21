@@ -6,7 +6,7 @@ export function createHeroCard(item) {
       </div>
       <h1 class="hero__title">${item.title}</h1>
       <p class="hero__text">${item.description}</p>
-      <section class="hero-actions">
+      <section class="hero__actions">
         <a href="#story" class="btn">Discover Our Story ↓</a>
       </section>
     </section>

@@ -1,0 +1,66 @@
+.featured {
+	padding: 30px 0 0 0;
+	animation: fadeDown 0.7s 0.2s ease both;
+	&__list {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.featured-card {
+	align-items: center;
+	display: flex;
+
+	&__content {
+		margin: 10px;
+		padding: 0 0px 0 20px;
+		border-radius: 10px;
+		flex: 1;
+	}
+
+	&__image {
+		overflow: visible;
+		position: relative;
+		height: 900px;
+		flex: 1;
+
+		img {
+			display: block;
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+
+	// &__dot {
+	// 	position: absolute;
+	// 	height: 80px;
+	// 	width: 80px;
+	// 	background-color: var(--secondary-color);
+	// 	border-radius: 50%;
+	// 	// 1
+	// 	&--top-right {
+	// 		right: -20px;
+	// 		top: -20px;
+	// 	}
+	// 	&--bottom-left {
+	// 		bottom: -20px;
+	// 		left: -20px;
+	// 	}
+	// 	// 2
+	// 	&--top-right2 {
+	// 		right: 478px;
+	// 		top: -20px;
+	// 	}
+
+	// 	&--bottom-left2 {
+	// 		bottom: -20px;
+	// 		left: 478px;
+	// 	}
+	// }
+
+	// чётные карточки — картинка идёт первой
+	&:nth-child(even) {
+		flex-direction: row-reverse;
+	}
+}
