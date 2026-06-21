@@ -32,32 +32,22 @@
 		}
 	}
 
-	// &__dot {
-	// 	position: absolute;
-	// 	height: 80px;
-	// 	width: 80px;
-	// 	background-color: var(--secondary-color);
-	// 	border-radius: 50%;
-	// 	// 1
-	// 	&--top-right {
-	// 		right: -20px;
-	// 		top: -20px;
-	// 	}
-	// 	&--bottom-left {
-	// 		bottom: -20px;
-	// 		left: -20px;
-	// 	}
-	// 	// 2
-	// 	&--top-right2 {
-	// 		right: 478px;
-	// 		top: -20px;
-	// 	}
-
-	// 	&--bottom-left2 {
-	// 		bottom: -20px;
-	// 		left: 478px;
-	// 	}
-	// }
+	&__link {
+		display: inline-block;
+		padding: 14px 36px;
+		color: #000000;
+		font-size: 12px;
+		font-weight: 700;
+		letter-spacing: 1.5px;
+		text-decoration: none;
+		border: none;
+		border-radius: 2px;
+		animation: fadeDown 0.6s ease both;
+		transition:
+			background 0.25s,
+			transform 0.15s;
+		cursor: pointer;
+	}
 
 	// чётные карточки — картинка идёт первой
 	&:nth-child(even) {
