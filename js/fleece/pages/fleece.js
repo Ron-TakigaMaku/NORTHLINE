@@ -1,3 +1,4 @@
+import { initFeaturedModal } from '../../modules/fleece/featured/featured-modal.js'
 import { renderFeatured } from '../../modules/fleece/featured/render-featured.js'
 import { renderHero } from '../../modules/fleece/hero/render-hero.js'
 
@@ -23,4 +24,6 @@ function initRevealAnimation() {
 document.addEventListener('DOMContentLoaded', () => {
 	renderHero()
 	renderFeatured()
+	initFeaturedModal()
+	initRevealAnimation()
 })
