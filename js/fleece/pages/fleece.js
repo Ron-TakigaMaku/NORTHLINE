@@ -1,6 +1,8 @@
 import { initFeaturedModal } from '../../modules/fleece/featured/featured-modal.js'
 import { renderFeatured } from '../../modules/fleece/featured/render-featured.js'
 import { renderHero } from '../../modules/fleece/hero/render-hero.js'
+import { renderShop } from '../../modules/fleece/shop/render-shop.js'
+import { initProductModal } from '../../modules/fleece/shop/shop-modal.js'
 
 function initRevealAnimation() {
 	const observer = new IntersectionObserver(
@@ -23,7 +25,9 @@ function initRevealAnimation() {
 
 document.addEventListener('DOMContentLoaded', () => {
 	renderHero()
+	renderShop()
 	renderFeatured()
+	initProductModal()
 	initFeaturedModal()
 	initRevealAnimation()
 })

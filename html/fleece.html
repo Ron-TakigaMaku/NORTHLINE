@@ -47,14 +47,6 @@
 			</div>
 		</section>
 
-		<div id="featured-modal">
-			<div class="featured-modal__overlay"></div>
-			<div class="featured-modal__window">
-				<button class="featured-modal__close">✕</button>
-				<div class="featured-modal__body"></div>
-			</div>
-		</div>
-
 		<section class="collection">
 			<section class="collection reveal">
   			<div class="collection__list">
@@ -73,16 +65,23 @@
 			</section>
 			</div>
 		</section>
-		<!-- shop -->
-		<section class="shop">
-  		<div class="container">
-  		  <h2 class="shop__title">All Products</h2>
-  		  <ul class="shop__list">
-
-  		  </ul>
-  		</div>
+	
+		<section id="#" class="shop reveal">
+			<section class="container">
+				<section class="shop__wrapper">
+					<div class="shop__track" id="#"></div>
+				</section>
+				<section class="shop__nav">
+					<section class="shop__dots" id="dots"></section>
+					<div class="shop__counter"></div>
+					<section class="shop__btns">
+						<button class="shop__prev" aria-label="Назад">←</button>
+						<button class="shop__next" aria-label="Вперёд">→</button>
+					</section>
+				</section>
+			</section>
 		</section>
-		
+
 		<footer class="footer">
 			<div class="container">
 				<div class="footer__container">
@@ -98,6 +97,24 @@
 				</div>
 			</div>
 		</footer>
+
+			<!-- MODAL -->
+		<div class="modal" id="product-modal">
+			<div class="modal__overlay"></div>
+			<div class="modal__window">
+				<button class="modal__close">✕</button>
+				<div class="modal__body"></div>
+			</div>
+		</div>
+
+
+		<div id="featured-modal">
+			<div class="featured-modal__overlay"></div>
+			<div class="featured-modal__window">
+				<button class="featured-modal__close">✕</button>
+				<div class="featured-modal__body"></div>
+			</div>
+		</div>
 
 		<script type="module" src="../js/fleece/pages/fleece.js"></script>
 	</body>
