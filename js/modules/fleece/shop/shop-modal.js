@@ -1,3 +1,5 @@
+import { shopData } from '../../../fleece/data/shop-data.js'
+
 function createModalContent(item) {
 	return `
 		<div class="modal__gallery">
