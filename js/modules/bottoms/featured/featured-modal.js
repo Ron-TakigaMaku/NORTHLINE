@@ -1,4 +1,4 @@
-import { featuredData } from '../../../fleece/data/featured-data.js'
+import { featuredData } from '../../../bottoms/data/featured-data.js'
 
 function createModalContent(item) {
 	return `

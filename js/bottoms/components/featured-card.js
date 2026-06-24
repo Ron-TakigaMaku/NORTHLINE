@@ -1,5 +1,3 @@
-// js/fleece/components/featured-card.js
-
 export function createFeaturedCard(item) {
 	return `
     <section class="featured-card reveal">

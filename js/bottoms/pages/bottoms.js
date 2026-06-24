@@ -1,6 +1,6 @@
+import { initFeaturedModal } from '../../modules/bottoms/featured/featured-modal.js'
+import { renderFeatured } from '../../modules/bottoms/featured/render-featured.js'
 import { renderHero } from '../../modules/bottoms/hero/render-hero.js'
-import { initFeaturedModal } from '../../modules/fleece/featured/featured-modal.js'
-import { renderFeatured } from '../../modules/fleece/featured/render-featured.js'
 import { initSlider } from '../../modules/fleece/shop/init-slider.js'
 import { renderShop } from '../../modules/fleece/shop/render-shop.js'
 import { initProductModal } from '../../modules/fleece/shop/shop-modal.js'
