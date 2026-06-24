@@ -1,16 +1,21 @@
 import { shopData } from '../../../fleece/data/shop-data.js'
 
 function createModalContent(item) {
+	const photos = item.image
+		.map(
+			src => `
+    <img src="${src}" alt="${item.title}" class="modal__img" />
+  `,
+		)
+		.join('')
+
 	return `
-		<div class="modal__gallery">
-			<img src="${item.img}" alt="${item.title}" class="modal__img" />
-			<img src="${item.image}" alt="${item.title}" class="modal__img" />
-		</div>
-		<p class="modal__brand">${item.brand}</p>
-		<h2 class="modal__title">${item.title}</h2>
-		<p class="modal__price">${item.price}</p>
-		<p class="modal__desc">${item.description}</p>
-	`
+    <div class="modal__gallery">${photos}</div>
+    <p class="modal__brand">${item.brand}</p>
+    <h2 class="modal__title">${item.title}</h2>
+    <p class="modal__price">${item.price}</p>
+    <p class="modal__desc">${item.description}</p>
+  `
 }
 
 export function initProductModal() {

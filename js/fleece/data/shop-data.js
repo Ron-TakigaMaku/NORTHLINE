@@ -7,7 +7,12 @@ export const shopData = [
 		description:
 			"This is an oversized sherpa fleece jacket in brown with a distinctive curved beige colorblock panel and the brand's embroidery on the chest. It features a high mock neck and adjustable toggles at the hem",
 		img: '../img/fleece/shop/Brown_VINTEY/1.jpg',
-		image: '',
+		image: [
+			'../img/fleece/shop/Brown_VINTEY/1.jpg',
+			'../img/fleece/shop/Brown_VINTEY/2.jpg',
+			'../img/fleece/shop/Brown_VINTEY/4.jpg',
+			'../img/fleece/shop/Brown_VINTEY/3.jpg',
+		],
 		linkText: 'More information ↗',
 		linkUrl: '#',
 	},
