@@ -1,6 +1,7 @@
 import { initFeaturedModal } from '../../modules/fleece/featured/featured-modal.js'
 import { renderFeatured } from '../../modules/fleece/featured/render-featured.js'
 import { renderHero } from '../../modules/fleece/hero/render-hero.js'
+import { initSlider } from '../../modules/fleece/shop/init-slider.js'
 import { renderShop } from '../../modules/fleece/shop/render-shop.js'
 import { initProductModal } from '../../modules/fleece/shop/shop-modal.js'
 
@@ -30,4 +31,5 @@ document.addEventListener('DOMContentLoaded', () => {
 	initProductModal()
 	initFeaturedModal()
 	initRevealAnimation()
+	initSlider()
 })

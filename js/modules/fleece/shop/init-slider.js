@@ -37,7 +37,7 @@ export const initSlider = () => {
 		if (counter) counter.textContent = `${idx + 1} / ${n}`
 	}
 
-	document.querySelector('.about__next').onclick = () => {
+	document.querySelector('.shop__next').onclick = () => {
 		clearInterval(autoScrollTimer)
 		go(idx + 1)
 		startAutoScroll()
