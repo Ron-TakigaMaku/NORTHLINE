@@ -21,10 +21,12 @@
 
 	&__window {
 		display: flex;
+		overflow: auto;
 		position: relative;
 		z-index: 1;
 		max-height: 90vh;
-		max-width: 1300px;
+		max-width: 90vw;
+		width: 900px;
 		padding: 40px;
 		background: #fff;
 		gap: 40px;
@@ -41,7 +43,9 @@
 	}
 
 	&__img {
-		width: 900px;
+		width: 700px;
+		padding: 0 0 0 100px;
+		flex-shrink: 0;
 		object-fit: cover;
 	}
 
