@@ -7,7 +7,7 @@ export const createCard = product => `
 	    <p class="product-card__brand">${product.brand}</p>
 	    <h3 class="product-card__title">${product.title}</h3>
 	    <p class="product-card__price">${product.price}</p>
-	    <p class="product-card__desc">${product.description}</p>
+	    <p class="product-card__desc">${product.text}</p>
 	    <button class="product-card__link" data-id="${product.id}">${product.linkText}</button>
 	  </div>
 	</article>
