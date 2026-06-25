@@ -41,8 +41,9 @@
 	gap: 14px;
 }
 .modal__img {
-	width: 600px;
+	width: 100%;
 	border-radius: 14px;
+	outline: 2px solid rgba(14, 13, 13, 0.08);
 	object-fit: cover;
 }
 .modal__brand {
@@ -69,4 +70,10 @@
 	color: #444;
 	font-size: 15px;
 	line-height: 1.7;
+}
+.modal__gallery {
+	display: grid;
+	padding: 0;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 12px;
 }
