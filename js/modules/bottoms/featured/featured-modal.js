@@ -6,7 +6,7 @@ function createModalContent(item) {
     <div class="featured-modal__info">
       <span class="featured-modal__number">${item.number}</span>
       <h3 class="featured-modal__title">${item.title}</h3>
-      <p class="featured-modal__text">${item.text}</p>
+      <p class="featured-modal__text">${item.description}</p>
     </div>
   `
 }
