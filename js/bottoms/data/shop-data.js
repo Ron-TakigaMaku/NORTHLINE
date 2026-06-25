@@ -1,11 +1,10 @@
 export const shopData = [
 	{
 		id: 1,
-		brand: 'Vinteys Couture',
-		title: 'Colorblock Fleece Jacket',
-		price: '$90',
-		description:
-			"This is an oversized sherpa fleece jacket in brown with a distinctive curved beige colorblock panel and the brand's embroidery on the chest. It features a high mock neck and adjustable toggles at the hem",
+		brand: 'The North Face',
+		title: 'Women’s Aphrodite Arise Wide-Leg Pants',
+		price: '$100',
+		description: '#',
 		img: '../img/fleece/shop/id1/1.jpg',
 		image: [
 			'../img/fleece/shop/id1/1.jpg',
@@ -18,11 +17,10 @@ export const shopData = [
 	},
 	{
 		id: 2,
-		brand: 'Nike',
-		title: 'Swoosh Full-Zip Sherpa Jacket',
-		price: '$120',
-		description:
-			'A piece made of thick artificial sherpa fleece, characterized by a large contrasting Nike "Swoosh" logo spanning across the front.',
+		brand: 'The North Face',
+		title: 'Women’s Summit Series Pacesetter 3 Shorts',
+		price: '$80',
+		description: '#',
 		img: '../img/fleece/shop/id2/4.png',
 		image: [
 			'../img/fleece/shop/id2/1.png',
@@ -36,10 +34,9 @@ export const shopData = [
 	{
 		id: 3,
 		brand: 'The North Face',
-		title: 'Denali Fleece Jacket',
-		price: '$170',
-		description:
-			"A classic all-black fleece zip-up jacket featuring the brand's logo embroidered on the left chest, designed for outdoor activities and daily wear.",
+		title: 'Women’s Aphrodite Arise Joggers',
+		price: '$95',
+		description: '#',
 		img: '../img/fleece/shop/id3/4.png',
 		image: [
 			'../img/fleece/shop/id3/1.png',
@@ -53,10 +50,9 @@ export const shopData = [
 	{
 		id: 4,
 		brand: 'The North Face',
-		title: 'Fleece Zip-up with Chest Pocket.',
-		price: '$190',
-		description:
-			'A fleece jacket equipped with an additional vertical zippered chest pocket, increasing its functionality as a mid-layer for insulation.',
+		title: 'Women’s Summit Series Pro 120 Tights',
+		price: '$110',
+		description: '#',
 		img: '../img/fleece/shop/id4/5.png',
 		image: [
 			'../img/fleece/shop/id4/1.png',
@@ -70,10 +66,25 @@ export const shopData = [
 	{
 		id: 5,
 		brand: 'The North Face',
-		title: 'Oversized Sherpa Fleece.',
-		price: '$200',
-		description:
-			'A modern oversized version of The North Face fleece jacket with a contrasting chest overlay made of a different fabric; it features a relaxed fit and a dense fleece texture.',
+		title: 'Women’s Freedom Insulated Pants',
+		price: '$140',
+		description: '#',
+		img: '../img/fleece/shop/id5/1.png',
+		image: [
+			'../img/fleece/shop/id5/1.png',
+			'../img/fleece/shop/id5/2.png',
+			'../img/fleece/shop/id5/3.png',
+			'../img/fleece/shop/id5/4.png',
+		],
+		linkText: 'More information ↗',
+		linkUrl: '#',
+	},
+	{
+		id: 6,
+		brand: 'The North Face',
+		title: 'Women’s Basin Skort',
+		price: '$90',
+		description: '#',
 		img: '../img/fleece/shop/id5/1.png',
 		image: [
 			'../img/fleece/shop/id5/1.png',

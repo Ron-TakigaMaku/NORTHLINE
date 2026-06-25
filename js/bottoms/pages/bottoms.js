@@ -1,9 +1,9 @@
 import { initFeaturedModal } from '../../modules/bottoms/featured/featured-modal.js'
 import { renderFeatured } from '../../modules/bottoms/featured/render-featured.js'
 import { renderHero } from '../../modules/bottoms/hero/render-hero.js'
-import { initSlider } from '../../modules/fleece/shop/init-slider.js'
-import { renderShop } from '../../modules/fleece/shop/render-shop.js'
-import { initProductModal } from '../../modules/fleece/shop/shop-modal.js'
+import { initSlider } from '../../modules/bottoms/shop/init-slider.js'
+import { renderShop } from '../../modules/bottoms/shop/render-shop.js'
+import { initProductModal } from '../../modules/bottoms/shop/shop-modal.js'
 
 function initRevealAnimation() {
 	const observer = new IntersectionObserver(

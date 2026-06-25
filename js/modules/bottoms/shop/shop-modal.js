@@ -1,4 +1,4 @@
-import { shopData } from '../../../fleece/data/shop-data.js'
+import { shopData } from '../../../bottoms/data/shop-data.js'
 
 function createModalContent(item) {
 	const photos = item.image
