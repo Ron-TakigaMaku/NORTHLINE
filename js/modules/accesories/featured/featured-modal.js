@@ -1,3 +1,5 @@
+import { featuredData } from '../../../accesories/data/featured-data.js'
+
 function createModalContent(item) {
 	return `
 		<img src="${item.img}" alt="${item.title}" class="featured-modal__img" />
