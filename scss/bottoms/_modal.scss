@@ -21,7 +21,8 @@
 	overflow: auto;
 	position: relative;
 	z-index: 1;
-	max-height: 95vh;
+	// max-height: 95vh;
+	height: min(100%, 900px);
 	width: min(100%, 1100px);
 	padding: 40px 32px 32px;
 	background: #fff;
@@ -62,7 +63,7 @@
 
 .modal__slide {
 	display: none;
-	height: 580px;
+	height: 800px;
 	width: 100%;
 	border-radius: 14px;
 	outline: 1px solid rgba(0, 0, 0, 0.08);
