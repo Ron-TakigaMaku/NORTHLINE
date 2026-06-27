@@ -1,5 +1,5 @@
-import { createHeroCard } from '../../../bottoms/components/hero-card.js'
-import { heroData } from '../../../bottoms/data/hero-data.js'
+import { createHeroCard } from '../../../accesories/components/hero-card.js'
+import { heroData } from '../../../accesories/data/hero-data.js'
 
 export function renderHero() {
 	const hero = document.querySelector('.hero__list')

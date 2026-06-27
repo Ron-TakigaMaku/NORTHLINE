@@ -1,9 +1,9 @@
 export const heroData = [
 	{
 		id: 1,
-		title: 'Women’s Bottoms & Trail Gear',
+		title: 'Accessories for Every Journey',
 		description:
-			'Engineered for the elements, designed for movement. From versatile trail pants to breathable shorts, find the perfect balance of durability, stretch, and comfort for every adventure.',
-		img: '../img/bottoms/hero/main-photo.png',
+			'Designed for movement, built for everyday exploration. From durable bags and lightweight hats to functional carry solutions, each accessory delivers a balance of practicality, comfort, and signature outdoor performance — wherever the day takes you.',
+		img: '../img/accesories/hero/main-photo.png',
 	},
 ]
