@@ -4,8 +4,9 @@ export const shopData = [
 		brand: 'The North Face',
 		title: 'Women’s VECTIV™ Enduris 4 Shoes',
 		price: '$180',
-		text: '#',
-		description: '#',
+		text: 'Advanced trail running shoes for maximum comfort and energy return.',
+		description:
+			'Engineered for long-distance trail running, these shoes feature VECTIV™ technology to maximize energy return and provide superior stability on rugged terrain, ensuring comfort during every mile.',
 		img: '../img/footwear/shop/id1/1.png',
 		image: [
 			'../img/footwear/shop/id1/2.png',
