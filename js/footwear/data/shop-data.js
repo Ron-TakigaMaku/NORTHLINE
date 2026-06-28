@@ -1,0 +1,107 @@
+export const shopData = [
+	{
+		id: 1,
+		brand: 'The North Face',
+		title: 'Women’s Class V Brimmer Hat',
+		price: '$55',
+		text: 'Lightweight sun protection for active outdoor days.',
+		description:
+			'Breathable brim hat designed to provide reliable UV protection and comfort during hiking, travel, and everyday summer wear.',
+		img: '../img/accesories/shop/id1/t.png',
+		image: [
+			'../img/accesories/shop/id1/t.png',
+			'../img/accesories/shop/id1/tt.png',
+			'../img/accesories/shop/id1/1.png',
+			'../img/accesories/shop/id1/2.png',
+			'../img/accesories/shop/id1/3.png',
+			'../img/accesories/shop/id1/4.png',
+		],
+		linkText: 'More information ↗',
+		linkUrl: '#',
+	},
+	{
+		id: 2,
+		brand: 'The North Face',
+		title: 'Borealis Tote',
+		price: '$90',
+		text: 'Everyday tote built for durability and versatility.',
+		description:
+			'Spacious and durable tote bag inspired by the iconic Borealis design, offering organized storage for work, travel, and daily essentials.',
+		img: '../img/accesories/shop/id2/1.png',
+		image: [
+			'../img/accesories/shop/id2/1.png',
+			'../img/accesories/shop/id2/2.png',
+			'../img/accesories/shop/id2/3.png',
+		],
+		linkText: 'More information ↗',
+		linkUrl: '#',
+	},
+	{
+		id: 3,
+		brand: 'The North Face',
+		title: 'Norm SE Hat',
+		price: '$40',
+		text: 'Classic everyday cap with minimalist design.',
+		description:
+			'Lightweight and comfortable cap designed for daily wear, combining simple styling with practical sun protection.',
+		img: '../img/accesories/shop/id3/1.png',
+		image: [
+			'../img/accesories/shop/id3/1.png',
+			'../img/accesories/shop/id3/2.png',
+			'../img/accesories/shop/id3/3.png',
+		],
+		linkText: 'More information ↗',
+		linkUrl: '#',
+	},
+	{
+		id: 4,
+		brand: 'The North Face',
+		title: 'Base Camp™ Tote Pack',
+		price: '$110',
+		text: 'Hybrid carry solution for travel and urban use.',
+		description:
+			'Convertible tote-backpack hybrid built from durable Base Camp material, designed for versatile carrying and heavy-duty everyday use.',
+		img: '../img/accesories/shop/id4/1.jpg',
+		image: [
+			'../img/accesories/shop/id4/1.jpg',
+			'../img/accesories/shop/id4/2.jpg',
+			'../img/accesories/shop/id4/3.png',
+		],
+		linkText: 'More information ↗',
+		linkUrl: '#',
+	},
+	{
+		id: 5,
+		brand: 'The North Face',
+		title: 'Base Camp™ Lumbar',
+		price: '$55',
+		text: 'Compact waist bag for hands-free convenience.',
+		description:
+			'Durable lumbar pack designed for travel and outdoor activities, offering secure storage and easy access to essentials.',
+		img: '../img/accesories/shop/id5/1.jpg',
+		image: [
+			'../img/accesories/shop/id5/1.jpg',
+			'../img/accesories/shop/id5/2.jpg',
+			'../img/accesories/shop/id5/3.png',
+		],
+		linkText: 'More information ↗',
+		linkUrl: '#',
+	},
+	{
+		id: 6,
+		brand: 'The North Face',
+		title: 'Berkeley Field Bag',
+		price: '$45',
+		text: 'Compact field bag for daily essentials.',
+		description:
+			'Retro-inspired shoulder bag with modern functionality, ideal for carrying small essentials in a lightweight and organized form.',
+		img: '../img/accesories/shop/id6/1.jpg',
+		image: [
+			'../img/accesories/shop/id6/1.jpg',
+			'../img/accesories/shop/id6/2.jpg',
+			'../img/accesories/shop/id6/3.png',
+		],
+		linkText: 'More information ↗',
+		linkUrl: '#',
+	},
+]
