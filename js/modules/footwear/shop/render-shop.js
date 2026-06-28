@@ -1,5 +1,5 @@
-import { createCard } from '../../../accesories/components/shop-card.js'
-import { shopData } from '../../../accesories/data/shop-data.js'
+import { createCard } from '../../../footwear/components/shop-card.js'
+import { shopData } from '../../../footwear/data/shop-data.js'
 
 export const renderShop = () => {
 	const container = document.querySelector('.shop__track')

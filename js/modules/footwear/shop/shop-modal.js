@@ -1,4 +1,4 @@
-import { shopData } from '../../../accesories/data/shop-data.js'
+import { shopData } from '../../../footwear/data/shop-data.js'
 
 function createModalContent(item) {
 	const slides = item.image
