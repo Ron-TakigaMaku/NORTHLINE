@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Anton&display=swap"
+			rel="stylesheet"
+		/>
+		<title>NORTHLINE</title>
+		<link rel="stylesheet" href="../scss/footwear/footwear.min.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__container">
+					<span class="header__logo">NORTHLINE</span>
+					<nav class="header__nav">
+						<ul class="header__list">
+							<li class="header__item">
+								<a href="../index.html" class="header__link">Home</a>
+							</li>
+							<li class="header__item">
+								<a href="fleece.html" class="header__link">Fleece</a>
+							</li>
+							<li class="header__item">
+								<a href="bottoms.html" class="header__link">Bottoms</a>
+							</li>
+							<li class="header__item">
+								<a href="footwear.html" class="header__link">Accessories</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<section class="hero">
+			<section class="hero__list"></section>
+		</section>
+
+		<section id="story" class="featured">
+			<div class="container">
+				<div class="featured__list"></div>
+			</div>
+		</section>
+
+		<section class="collection">
+			<section class="collection reveal">
+  			<div class="collection__list">
+    			<div class="collection__content">
+						<div class="collection__img">
+							<img src="../img/accesories/collection/mountain.png" alt="" />
+						</div>
+						<h1 class="collection__title">SPRING / SUMMER 2026</h1>
+						<p class="collection__description">
+							Built for movement. Designed for exploration.
+						</p>
+						<section class="collection__actions">
+							<a href="#" class="btn">EXPLORE COLLECTION →</a>
+						</section>
+				</div>
+			</section>
+			</div>
+		</section>
+	
+		<section  class="shop reveal">
+			<section class="container">
+				<section class="shop__wrapper">
+					<div class="shop__track" ></div>
+				</section>
+				<section class="shop__nav">
+					<section class="shop__dots" id="dots"></section>
+					<div class="shop__counter"></div>
+					<section class="shop__btns">
+						<button class="shop__prev" aria-label="Назад">←</button>
+						<button class="shop__next" aria-label="Вперёд">→</button>
+					</section>
+				</section>
+			</section>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__container">
+					<p class="footer__text">© Ron ⏤ 2026</p>
+					<nav class="footer__links">
+						<ul>
+							<li><a href="#" class="footer__link">Linkedin</a></li>
+							<li><a href="#" class="footer__link">Twitter</a></li>
+							<li><a href="#" class="footer__link">Github</a></li>
+							<li><a href="#" class="footer__link">Contatcs</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</footer>
+
+			<!-- MODAL -->
+		<div class="modal" id="product-modal">
+			<div class="modal__overlay"></div>
+			<div class="modal__window">
+				<button class="modal__close">✕</button>
+				<div class="modal__body"></div>
+			</div>
+		</div>
+
+
+		<div id="featured-modal">
+			<div class="featured-modal__overlay"></div>
+			<div class="featured-modal__window">
+				<button class="featured-modal__close">✕</button>
+				<div class="featured-modal__body"></div>
+			</div>
+		</div>
+
+		<script type="module" src="../js/accesories/pages/accesories.js"></script>
+	</body>
+</html>
